@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         
-        <title>Docker Workshop (working title)</title>
+        <title>Containers with Docker</title>
 
         <link rel="stylesheet" href="css/reveal.css">
         <link rel="stylesheet" href="css/theme/solarized.css">
@@ -17,13 +17,18 @@
             <div class="slides">
                 <section data-markdown class="content"> 
                     <script type="text/template">
-                        ## Docker workshop!
-
-                        (working title)
+                        ## Containers with Docker
                     </script>
                 </section>
                 <section>
                     <section data-markdown="overview.md" 
+                        data-separator="^---" 
+                        data-separator-vertical="^\n\n" 
+                        data-separator-notes="^Note:">
+                    </section>
+                </section>
+                <section>
+                    <section data-markdown="introduction_to_containers.md" 
                         data-separator="^---" 
                         data-separator-vertical="^\n\n" 
                         data-separator-notes="^Note:">
@@ -37,6 +42,7 @@
 
         <script>
             Reveal.initialize({
+                history: true,
 				dependencies: [
                     { src: 'plugin/markdown/marked.js', condition: function(){ return !!document.querySelector('[data-markdown]');} },
 					{ src: 'plugin/markdown/markdown.js', condition: function(){ return !!document.querySelector('[data-markdown]');}  },

@@ -1,0 +1,13 @@
+server {
+  listen $PRESENTATION_PORT default_server;
+  listen [::]:$PRESENTATION_PORT default_server;
+
+  root /var/www/presentation;
+
+  index index.html;
+
+
+  location / {
+    try_files $uri $uri/ =404;
+  }
+}

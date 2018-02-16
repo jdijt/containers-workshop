@@ -16,9 +16,8 @@
 ### Agenda - Day 1
 
 1. Introduction to containers
-    - What is a container?
-    - A minimal container using Docker
-2. Containerizing your app
+2. Running containers with Docker
+3. Creating container images for Docker 
 
 ---
 ### Agenda - Day 2

@@ -63,4 +63,13 @@ Note:
 - Does the order matter? -> Not for funtionality, does for build and layer reuse.
 
 ---
-### Sharing docker-presentation
+### Sharing images.
+- Docker Registry (like: nexus, artifactory).
+- Main operations: tag, push, pull.
+
+```
+docker build --tag <registry/image:tag> <directory>
+docker push <registry/image:tag>
+docker pull <registry/image:tag>
+docker tag <imageid-ish> <registry/image:tag>
+```

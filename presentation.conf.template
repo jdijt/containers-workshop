@@ -1,6 +1,6 @@
 server {
-  listen $PRESENTATION_PORT default_server;
-  listen [::]:$PRESENTATION_PORT default_server;
+  listen $PRESENTATION_PORT;
+  listen [::]:$PRESENTATION_PORT;
 
   root /var/www/presentation;
 

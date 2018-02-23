@@ -1,0 +1,19 @@
+version: "3"
+services:
+  proxy:
+    image: nginx
+    ports:
+      - 8080:80
+    volumes:
+      - ./nginx.template:/etc/nginx/conf.d/nginx.template
+    environment:
+      - NGINX_PORT=80
+      - COUNTRY_SERVICE_HOST=
+      - COUNTRY_SERVICE_PORT=
+      - AIRPORT_SERVICE_HOST=
+      - AIRPORT_SERVICE_PORT=
+    command: /bin/bash -c "envsubst < /etc/nginx/conf.d/nginx.template > /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'"
+
+  countries:
+
+  airports:

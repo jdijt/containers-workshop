@@ -1,0 +1,11 @@
+server {
+    listen ${NGINX_PORT};
+
+    location /countries {
+        proxy_pass http://${COUNTRY_SERVICE_HOST}:${COUNTRY_SERVICE_PORT};
+    }
+
+    location /airports {
+        proxy_pass http://${AIRPORT_SERVICE_HOST}:${AIRPORT_SERVICE_PORT};
+    }
+}

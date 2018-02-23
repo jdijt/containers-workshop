@@ -5,7 +5,7 @@
 
 - Docker for Mac installed.
 - Docker compose installed.
-- Clone the repository at: TODO
+- Clone the repository at: https://github.com/jdijt/containers-workshop
 
 ---
 ### Agenda
